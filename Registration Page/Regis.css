@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #212121;
+}
+.root{
+    height: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.root .rootalign{
+    height: 600px;
+    width: 600px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 5px #818181;
+    cursor: pointer;
+}
+.root .rootalign .rootname{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rootmain{
+    height: 450px;
+}
+.rootdetail{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rootdetail .errorhandler{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 14px;
+}
+.rootdetail label{
+    margin: 15px;
+}
+.reg-sec{
+    margin: 10px;
+}
+.reg-sec button{
+    margin-left: 5px;
+}
+.reg-sec button input{
+    box-sizing: border-box;
+    border: 1px #ccc;
+    background-color: transparents;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: 1px #ccc;
+    background-color: #212121;
+    color: #fff;
+}
+.reg-sec input{
+    height: 28px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reg-sec input:hover{
+    color: red;
+}
+.reg-link a{
+    margin-left: 55px;
+    color: #818181;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.reg-link a:hover{
+    color: red;
+}
