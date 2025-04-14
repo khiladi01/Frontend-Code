@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: black;
+      user-select: none;
+    }
+
+    .root {
+      height: 735px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rootalign {
+      height: 400px;
+      width: 400px;
+      border: 3px solid cyan;
+      box-shadow: 0 0 12px cyan;
+      border-radius: 30px;
+    }
+
+    .rootname {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 26px;
+    }
+
+    .rootsec {
+      height: 300px;
+    }
+
+    .rootdetail {
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rootdetail label {
+      color: #fff;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 10px;
+      font-size: 17px;
+    }
+
+    .rootdetail input {
+      height: 40px;
+      width: 250px;
+      margin: 3px;
+      background-color: transparent;
+      border: 2px solid #212121;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 17px;
+      padding-inline: 10px;
+    }
+
+    #submitbt {
+      cursor: pointer;
+    }
+
+    /* Animation class added via JS */
+    .error-animate {
+      border: 2px solid red !important;
+      animation: shake 0.3s;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+    .password-toggle {
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section class="root">
+    <section class="rootalign">
+      <section class="rootname"><h1>Login</h1></section>
+      <section class="rootsec">
+        <section class="rootdetail">
+          <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username"><br><br>
+
+            <label for="userpassword">Password</label><br>
+            <input type="password" id="userpassword" name="userpassword">
+            <span class="password-toggle" id="togglePass">😊</span><br><br>
+
+            <input type="submit" value="Login" id="submitbt"><br>
+          </form>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector("form");
+      const usernameInput = document.querySelector("#username");
+      const passwordInput = document.querySelector("#userpassword");
+      const toggleBtn = document.querySelector("#togglePass");
+
+      // Toggle password visibility
+      toggleBtn.addEventListener("click", () => {
+        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+        toggleBtn.textContent = type === "password" ? "😊": "😃";
+      });
+
+      // Error handling + animation
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Remove error styles first
+        usernameInput.classList.remove("error-animate");
+        passwordInput.classList.remove("error-animate");
+
+        let errorhandle = false;
+
+        if (usernameInput.value.trim() === "") {
+          usernameInput.classList.add("error-animate");
+          errorhandle = true;
+        }
+
+        if (passwordInput.value.trim() === "") {
+          passwordInput.classList.add("error-animate");
+          errorhandle = true;
+        }
+
+        if (!errorhandle) {
+          alert("Logged in successfully!");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
