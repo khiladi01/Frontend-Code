@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    user-select: none;
+  }
+
+  .root {
+    height: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rootalign {
+    height: 400px;
+    width: 400px;
+    border: 3px solid cyan;
+    box-shadow: 0 0 12px cyan;
+    border-radius: 30px;
+  }
+
+  .rootname {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .rootsec {
+    height: 300px;
+  }
+
+  .rootdetail {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rootdetail label {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    font-size: 17px;
+  }
+
+  .rootdetail input {
+    height: 40px;
+    width: 250px;
+    margin: 3px;
+    background-color: transparent;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    padding-inline: 10px;
+  }
+
+  #submitbt {
+    cursor: pointer;
+  }
+
+  /* Animation class added via JS */
+  .error-animate {
+    border: 2px solid red !important;
+    animation: shake 0.3s;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+  .password-toggle {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
