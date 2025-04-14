@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #212121;
+}
+.root{
+    height: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rootalign{
+    height: 500px;
+    width: 500px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 5px #818181;
+}
+.rootname{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+}
+.rootmain{
+    height: 350px;
+}
+.rootdetail{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rootdetail label{
+    margin: 15px;
+}
+.errorhandler{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.log-sec{
+    margin: 10px;
+    margin-left: 16px;
+}
+.log-sec button input{
+    width: 80px;
+    height: 28px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #212121;
+}
+.reg-link{
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.reg-link a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+.reg-link a:hover{
+    color: red;
+}
+.rootalign button:hover{
+    color: red;
+    cursor: pointer;
+}
