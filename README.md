@@ -1,4 +1,6 @@
-# Frontend Repo
-# This Project Is On HTML,CSS,JS 
-# In This We Made Both Registration Page For User SignUp And Made Login Page For User SignIn
-# Next Plan Is Make This Project On Complex Level Add Animation And Password Toggle
+# Frontend Project 
+
+Day 1. Making Login Page Or Registration Page With Floating Label By Using HTML,CSS,JS
+And Also Making Modern Login Page With Hide Or Show Password Toggle
+
+Day 2. Next Plan Is Making Profile Card Generator By Using HTML,Tailwind CSS,React.js
