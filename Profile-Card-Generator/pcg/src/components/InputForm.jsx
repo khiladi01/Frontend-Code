@@ -18,11 +18,11 @@ const InputForm = ({image , setImage, name , setName , job , setJob , link , set
     const handleSubmit = (e) => {
         e.preventDefault(); 
         console.log("Form Submitted");
-        console.log({ image, name, job, bio });
+        console.log({ image, name, job, link , bio });
       };
 
       const cardMessage = () => {
-       alert("Card Generated Successfully")
+        alert("Card Generated Successfully");
       }
 
     return (
@@ -31,7 +31,7 @@ const InputForm = ({image , setImage, name , setName , job , setJob , link , set
                 <input 
                 type="file"
                 onChange={(ImageUpload)} 
-                className='w-full border-0 rounded-lg p-2 shadow-custom mt-3 px-4 bg-transparent text-white font-medium'
+                className='w-full border-0 rounded-lg p-2 shadow-custom mt-3 px-4 bg-transparent text-red-500 font-medium'
                 />
                 <input 
                 type="text"

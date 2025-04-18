@@ -1,14 +1,6 @@
-// import { useEffect } from "react";
 import html2canvas from "html2canvas";
 
 const Card = ({image, name , job , link , bio  }) => {
-
-//    useEffect(() => {
-//         const storedImage = localStorage.getItem("profileImage");
-//         if(storedImage){
-//             setImage(storedImage);
-//         }
-//        }, [setImage]);
 
     const carddownload = async () => {
         const cardElement = document.getElementById("card");
@@ -29,7 +21,7 @@ const Card = ({image, name , job , link , bio  }) => {
     
     return (
         <div>
-          <div id="card" className="max-w-sm mx-auto bg-slate-300 rounded-2xl overflow-hidden p-6 grid place-content-center shadow-custom">
+          <div id="card" className="max-w-sm mx-auto bg-slate-300 rounded-2xl overflow-hidden p-6 grid place-content-center shadow-custom bg-transparent">
 
             <div className="flex justify-center items-center h-28 w-28 border-slate-600 border-2 rounded-full bg-transparent shadow-custom">
               {image ? (
@@ -44,16 +36,16 @@ const Card = ({image, name , job , link , bio  }) => {
                 </div>
               )}
             </div>
-            <h2 className="mt-4 text-xl font-bold">{name || "Your Name"}</h2>
-            <h3 className="mt-4 text-base font-medium">{job || "Profession"}</h3>
-            <h3 className="mt-4 text-base font-medium">{link || "Social Link"}</h3>
-            <p className="mt-4 text-sm font-medium">{bio || "Bio"}</p>
+            <h2 className="mt-4 text-xl font-bold text-slate-50">{name || "Your Name"}</h2>
+            <h3 className="mt-4 text-base font-medium text-slate-50">{job || "Profession"}</h3>
+            <h3 className="mt-4 text-base font-medium text-slate-50">{link || "Social Link"}</h3>
+            <p className="mt-4 text-sm font-medium text-slate-50">{bio || "Bio"}</p>
           </div>
 
           <div className="min-h-10 text-center mt-4">
          <button
             onClick={carddownload} 
-            className="mt-4 bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-800 transition duration-300"
+            className="mt-4 bg-gray-700 text-red-400 font-semibold py-2 px-4 rounded-lg hover:bg-gray-800 hover:text-red-500 transition duration-300"
           >
             Download Card
           </button>

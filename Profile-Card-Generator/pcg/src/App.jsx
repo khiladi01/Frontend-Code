@@ -13,15 +13,14 @@ function App() {
       const storeImage = localStorage.getItem("profileImage");
       if(storeImage)
         setImage(storeImage)
-
-    },[]);
+    },[setImage]);
 
   return (
     <>
     <div className=" min-h-16 bg-gray-700 grid place-content-center shadow-custom">
     <h1 className="text-3xl text-slate-300 font-bold text-center">Profile Card Generator</h1>
     </div>
-    <div className="min-h-screen bg-gray-600 p-4 grid place-content-center">
+    <div className="min-h-screen bg-gray-600 p-10 grid place-content-center">
       <div className="grid md:grid-cols-2 gap-8">
         <InputForm image={image} setImage={setImage} name={name} setName={setName} job={job} setJob={setJob} link={link} setLink={setLink} bio={bio} setBio={setBio} />
 
