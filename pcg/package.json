@@ -1,4 +1,6 @@
 {
+  "description" : "Profile Card Generator",
+  "author" : "Raushan Raj",
   "name": "pcg",
   "private": true,
   "version": "0.0.0",
