@@ -1,3 +1,3 @@
-# Frontend Project 
+# Profile Card Generator 
 
-Day 1. Make a static website on profile card generator by using tools HTML , Tailwind CSS , React.js 
+ Make a static website by using tools HTML , Tailwind CSS , React.js 
