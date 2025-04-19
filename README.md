@@ -42,12 +42,6 @@ npm start
 - Dark mode
 - Export as PDF option
 
----
-
-## 📎 Live Demo
-
-_Not available yet – will be added once the project is live._
-
 
 ## 🤝 Contributing
 
